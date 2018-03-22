@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.pandatv">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <application
+        android:name=".app.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_ipnda"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".one_donghua.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".titleactivity.huodong.HuoDongActivity" />
+        <activity android:name=".titleactivity.wo.WoActivity" />
+        <activity android:name=".view.activity.ShowActivity" />
+        <activity android:name=".titleactivity.wo.denglu.viewinf.DengluActivity" />
+        <activity android:name=".titleactivity.wo.lishi.GuanKanActivity" />
+        <activity android:name=".titleactivity.wo.ShouChang.ShouChangActivity" />
+        <activity android:name=".titleactivity.wo.shezhi.SheZhiActivity" />
+        <activity android:name=".one_donghua.StartLoadingActivity" />
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".titleactivity.wo.xinxi.XinXiActivity" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5a9de2c38f4a9d1c3a00029f" />
+
+        <activity
+            android:name=".view.activity.RadioActivity"
+            android:configChanges="keyboard|orientation|screenSize" />
+        <activity android:name=".titleactivity.wo.zhuce.ZhuCeActivity" />
+        <activity android:name=".titleactivity.wo.zhuce.fragment.view.XieYiActivity" />
+        <activity android:name=".titleactivity.wo.denglu.viewinf.WangjiActivity" />
+        <activity android:name=".titleactivity.wo.xinxi.SetNameActivity" />
+        <activity android:name=".view.activity.ZhiBoActivity"></activity>
+    </application>
+
+</manifest>

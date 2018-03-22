@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.pandatv.view.fragment.shou_one.fragment.ShouFragment"
+    android:orientation="vertical">
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+
+        <android.support.design.widget.TabLayout
+            android:background="#fff"
+            android:id="@+id/tb"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            app:tabMode="scrollable">
+
+        </android.support.design.widget.TabLayout>
+    <TextView
+        android:background="#fff"
+        android:id="@+id/add"
+        android:textColor="#080808"
+        android:text="+"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+</LinearLayout>
+    <com.example.pandatv.view.ViewPagerN
+        android:id="@+id/vpf"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </com.example.pandatv.view.ViewPagerN>
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.pandatv.view.fragment.four_fragment.fragment.OneFragment">
+
+    <ImageView
+        android:id="@+id/vd"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/_tw"></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="[正在直播]"
+            android:textColor="#1e1d1d"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="[正在直播]"
+            android:textColor="#1e1d1d"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/jian"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="简介"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/jiao"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/com_facebook_tooltip_blue_bottomnub"
+                android:textColor="#1e1d1d"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d6c9c9" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/jiandata"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#fff"
+                android:paddingLeft="18dp"
+                android:paddingRight="15dp"
+                android:paddingTop="20dp"
+                android:text="5555"
+                android:textColor="#1e1d1d"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d6c9c9" />
+
+
+            <android.support.design.widget.TabLayout
+                android:background="#fff"
+                android:id="@+id/tb"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"></android.support.design.widget.TabLayout>
+
+            <com.example.pandatv.view.ViewPagerN
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.example.pandatv.view.ViewPagerN>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
